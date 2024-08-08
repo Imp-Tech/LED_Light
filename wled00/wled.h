@@ -3,8 +3,8 @@
 /*
    Main sketch, global variable declarations
    @title WLED project sketch
-   @version 0.14.3
-   @author Christian Schwinne
+   @version 0.1.0
+   @author MechArt
  */
 
 // version code in format yymmddb (b = daily build)
@@ -256,7 +256,7 @@ using PSRAMDynamicJsonDocument = BasicJsonDocument<PSRAM_Allocator>;
 
 // Global Variable definitions
 WLED_GLOBAL char versionString[] _INIT(TOSTRING(WLED_VERSION));
-#define WLED_CODENAME "Hoshi"
+#define WLED_CODENAME "S/2009_S1"
 
 // AP and OTA default passwords (for maximum security change them!)
 WLED_GLOBAL char apPass[65]  _INIT(WLED_AP_PASS);

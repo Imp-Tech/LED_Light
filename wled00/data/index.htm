@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="theme-color" content="#222222">
 	<meta content="yes" name="apple-mobile-web-app-capable">
-	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAGACGAAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAE1JREFUOI1j/P//PwOxgNGeAUMxE9G6cQCKDWAhpADZ2f8PMjBS3QW08QK20KaZC2gfC9hCnqouoNgARgY7zMxAyNlUdQHlXiAlO2MDAD63EVqNHAe0AAAAAElFTkSuQmCC"/>
-	<title>WLED</title>
+	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIAAoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYH//0NDQ/xNOJ/8TTif/0NDQ/z00DP89NAz/0NDQ/2M3B/9jNwf/0NDQ/00SIP9NEiD/0NDQ/zARTP8wEUz/AGB//9DQ0P8TTif/E04n/9DQ0P89NAz/PTQM/9DQ0P9jNwf/YzcH/9DQ0P9NEiD/TRIg/9DQ0P8wEUz/MBFM/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P8AkL//0NDQ/x12OP8ddjj/0NDQ/1xPE/9cTxP/0NDQ/5RTC/+UUwv/0NDQ/3UcNf91HDX/0NDQ/0cbdP9HG3T/AJC//9DQ0P8ddjj/HXY4/9DQ0P9cTxP/XE8T/9DQ0P+UUwv/lFML/9DQ0P91HDX/dRw1/9DQ0P9HG3T/Rxt0/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P8AAAD/0NDQ/0+oav9PqGr/0NDQ/46BRf+OgUX/0NDQ/8aFPf/GhT3/0NDQ/6dOZ/+nTmf/0NDQ/3lNpv95Tab/AAAA/9DQ0P9PqGr/T6hq/9DQ0P+OgUX/joFF/9DQ0P/GhT3/xoU9/9DQ0P+nTmf/p05n/9DQ0P95Tab/eU2m/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P8AAAD/0NDQ/wAAAP8AAAD/0NDQ/6+ldv+vpXb/0NDQ/9yob//cqG//0NDQ/8N8jv/DfI7/0NDQ/6B7wv+ge8L/AAAA/9DQ0P8AAAD/AAAA/9DQ0P+vpXb/r6V2/9DQ0P/cqG//3Khv/9DQ0P/DfI7/w3yO/9DQ0P+ge8L/oHvC/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P8AAAD/0NDQ/wAAAP8AAAD/0NDQ/wAAAP8AAAD/0NDQ/+jFn//oxZ//0NDQ/9antP/Wp7T/0NDQ/wAAAP8AAAD/AAAA/9DQ0P8AAAD/AAAA/9DQ0P8AAAD/AAAA/9DQ0P/oxZ//6MWf/9DQ0P/Wp7T/1qe0/9DQ0P8AAAD/AAAA/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/9DQ0P8AAAD/0NDQ/wAAAP8AAAD/0NDQ/wAAAP8AAAD/0NDQ//Piz//z4s//0NDQ/wAAAP8AAAD/0NDQ/wAAAP8AAAD/"/>
+	<title>LED Light</title>
 	<script>
 	function feedback(){}
 	// instead of including [script src="iro.js"][/script] and [script src="rangetouch.js"][/script]
@@ -54,8 +54,8 @@
 </head>
 <body>
 
-<div id="cv" class="overlay">Loading WLED UI...</div>
-<noscript><div class="overlay" style="opacity:1;">Sorry, WLED UI needs JavaScript!</div></noscript>
+<div id="cv" class="overlay">Loading LED Light UI...</div>
+<noscript><div class="overlay" style="opacity:1;">Sorry, LED Light UI needs JavaScript!</div></noscript>
 <div id="bg"></div>
 
 <div class="wrapper" id="top">
@@ -358,22 +358,22 @@
 <div id="info" class="modal">
 	<button class="btn btn-xs close" onclick="toggleInfo()"><i class="icons rot45">&#xe18a;</i></button>
 	<div id="imgw">
-		<img class="wi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAFCAYAAAC5Fuf5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVChTlY9bDoAwDMNW7n9nwCipytQN4Z8tbrTHmDmF4oPzyldwRqp1SSdnV/NuZuzqerAByxXznBw3igkeFEfXyUuhK/yFM0CxJfyqXZEOc6/Sr9/bf7uIC5Nwd7orMvAPAAAAAElFTkSuQmCC" />
+	<img class="wi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANcAAAAeCAMAAACIRHv7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEUAAADMAAA4dh0TT1wLU5Q1HHV0G0d/YAAnThMMND0HN2MgEk1METDP4vPqmZmfxei0p9bVpr3/5Zm216iixMlvqNz/2Wb5y5x2pa+OfMPCe6DgZmY9hcZnTqemTXnxwjKTxH1qqE9FgY7mkTi/kAD///8qR4ilAAAADXRSTlMAzMu+8sbW34h9oX+NfjTurwAAAAFiS0dEJcMByQ8AAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfoCAgPJg7sPbl/AAABAklEQVRYw+3YyW7DMAxF0dd5btMknee0//+NuaAXFAipResuBIFnF5Am/CRDgS0FF1DNJaqFK2gBXaPoW0IraI0/DP1PmStz9ZBrVL76QXNpb1At3OKHvubQ4A7Fz+b+29ORuTJXt7kGdI9pVR+gRxTVJ1Qve4ZeoFcUhTfEvuD7oaHF99/v1Fn1HVM1c2WuznIN6APaoL36O6heO+ecbw71/bKWTxT7b3dq7E5DjsyVuTrLNaAvaBfag/ahA+gQRV/zSJ6zX78aGs55Y/9Izs75zJW5+sk1qiPoGDqBTqEz6BxFn70C2vudf2cys79HNYeGFufzam/AUzVzZa4eco1pC1XSfNHNWg7NAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA4LTA4VDE1OjM4OjE0KzA5OjAwZXdorwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wOC0wOFQxNTozODoxNCswOTowMBQq0BMAAAAASUVORK5CYII=" />
 	</div>
 	<div id="kv">Loading...</div><br>
 	<div>
 		<button class="btn infobtn" onclick="requestJson()">Refresh</button>
 		<button class="btn infobtn" onclick="toggleNodes()">Instance List</button>
-		<button class="btn infobtn" onclick="window.open(getURL('/update'),'_self');">Update WLED</button>
-		<button class="btn infobtn" id="resetbtn" onclick="cnfReset()">Reboot WLED</button>
+		<button class="btn infobtn" onclick="window.open(getURL('/update'),'_self');">Update LED Light</button>
+		<button class="btn infobtn" id="resetbtn" onclick="cnfReset()">Reboot LED Light</button>
 	</div>
 	<br>
-	<span class="h">Made with <span id="heart">&#10084;&#xFE0E;</span> by Aircoookie and the <a href="https://wled.discourse.group/" target="_blank">WLED community</a></span>
+	<span class="h">Made by <a href="mailto:mechart.xyz@gmail.com">MechArt</a></span>
 </div>
 
 <div id="nodes" class="modal">
 	<button class="btn btn-xs close" onclick="toggleNodes()"><i class="icons rot45">&#xe18a;</i></button>
-	<div id="ndlt">WLED instances</div>
+	<div id="ndlt">LED Light instances</div>
 	<div id="kn">Loading...</div>
 	<div style="position:sticky;bottom:0;">
 		<button class="btn infobtn" onclick="loadNodes()">Refresh</button>
