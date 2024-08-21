@@ -28,7 +28,7 @@ void WLED::reset()
     yield();        // enough time to send response to client
   }
   applyBri();
-  DEBUG_PRINTLN(F("WLED RESET"));
+  DEBUG_PRINTLN(F("LED Light RESET"));
   ESP.restart();
 }
 
@@ -309,7 +309,7 @@ void WLED::setup()
   Serial.setDebugOutput(false); // switch off kernel messages when using USBCDC
   #endif
   DEBUG_PRINTLN();
-  DEBUG_PRINT(F("---WLED "));
+  DEBUG_PRINT(F("---LED Light "));
   DEBUG_PRINT(versionString);
   DEBUG_PRINT(" ");
   DEBUG_PRINT(VERSION);
@@ -459,10 +459,10 @@ pinManager.allocateMultiplePins(pins, sizeof(pins)/sizeof(managed_pin_type), Pin
   #endif
 
   // fill in unique mdns default
-  if (strcmp(cmDNS, "x") == 0) sprintf_P(cmDNS, PSTR("wled-%*s"), 6, escapedMac.c_str() + 6);
+  if (strcmp(cmDNS, "x") == 0) sprintf_P(cmDNS, PSTR("ledl-%*s"), 6, escapedMac.c_str() + 6);
 #ifndef WLED_DISABLE_MQTT
-  if (mqttDeviceTopic[0] == 0) sprintf_P(mqttDeviceTopic, PSTR("wled/%*s"), 6, escapedMac.c_str() + 6);
-  if (mqttClientID[0] == 0)    sprintf_P(mqttClientID, PSTR("WLED-%*s"), 6, escapedMac.c_str() + 6);
+  if (mqttDeviceTopic[0] == 0) sprintf_P(mqttDeviceTopic, PSTR("ledl/%*s"), 6, escapedMac.c_str() + 6);
+  if (mqttClientID[0] == 0)    sprintf_P(mqttClientID, PSTR("LEDL-%*s"), 6, escapedMac.c_str() + 6);
 #endif
 
 #ifdef WLED_ENABLE_ADALIGHT
@@ -767,8 +767,8 @@ void WLED::initInterfaces()
 
     DEBUG_PRINTLN(F("mDNS started"));
     MDNS.addService("http", "tcp", 80);
-    MDNS.addService("wled", "tcp", 80);
-    MDNS.addServiceTxt("wled", "tcp", "mac", escapedMac.c_str());
+    MDNS.addService("ledl", "tcp", 80);
+    MDNS.addServiceTxt("ledl", "tcp", "mac", escapedMac.c_str());
   }
   server.begin();
 

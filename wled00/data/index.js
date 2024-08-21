@@ -209,7 +209,7 @@ function onLoad()
 		loc = true;
 		locip = localStorage.getItem('locIp');
 		if (!locip) {
-			locip = prompt("File Mode. Please enter WLED IP!");
+			locip = prompt("File Mode. Please enter LED Light IP!");
 			localStorage.setItem('locIp', locip);
 		}
 	} else {
@@ -1021,7 +1021,7 @@ function btype(b)
 
 function bname(o)
 {
-	if (o.name=="WLED") return o.ip;
+	if (o.name=="LED_light") return o.ip;  // WLED to LED_light
 	return o.name;
 }
 

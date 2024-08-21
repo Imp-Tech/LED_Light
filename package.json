@@ -1,7 +1,7 @@
 {
-  "name": "LED_light",
+  "name": "LED_Light",
   "version": "0.1.0",
-  "description": "Tools for LED_light project",
+  "description": "Tools for LED Light project",
   "main": "tools/cdata.js",
   "directories": {
     "lib": "lib",
