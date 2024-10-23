@@ -1,0 +1,29 @@
+----------------------------------------------------------
+WQTT.RU -> smartlotto@yandex.ru [33FractalCucumber!]
+----------------------------------------------------------
+myqtthub.com -> scriptcloud@inbox.ru [Cucumber!]
+----------------------------------------------------------
+www.dioty.co -> Google(mechart.xyz@gmail.com)
+Broker host: mqtt.dioty.co
+
+Broker port: 1883
+
+Secure Broker port: 8883. Please download the ca_cert file from GitHub
+
+WebSockets port: 8080
+
+Secure WebSockets port: 8880
+
+User id: mechart.xyz@gmail.com
+
+Your root topic: "/mechart.xyz@gmail.com/"
+
+-----------------------------------------------------------
+clusterfly.ru -> smartlotto@yandex.ru
+-----------------------------------------------------------
+
+MQTT
+user: user_5d6f0d23
+pass: RI5bVt0jW-hL_
+
+-----------------------------------------------------------
